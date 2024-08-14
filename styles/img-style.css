@@ -1,0 +1,45 @@
+.sidebar li::before {
+    content: "";
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.home::before {
+    background-image: url('../SVGs/home.svg');
+}
+
+.profile::before {
+    background-image: url('../SVGs/account.svg');
+}
+
+.messages::before {
+    background-image: url('../SVGs/message.svg');
+}
+
+.history::before {
+    background-image: url('../SVGs/history.svg');
+}
+
+.tasks::before {
+    background-image: url('../SVGs/calendar-check.svg');
+}
+
+.communities::before {
+    background-image: url('../SVGs/account-group.svg');
+}
+
+.settings::before {
+    background-image: url('../SVGs/cog.svg');
+}
+
+.support::before {
+    background-image: url('../SVGs/help-box.svg');
+}
+
+.privacy::before {
+    background-image: url('../SVGs/shield-check.svg');
+}
