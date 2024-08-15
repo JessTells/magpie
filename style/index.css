@@ -1,6 +1,72 @@
-body{
-    margin: 0;
-    height: 100vh;
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+}
+
+main {
+    background-color: #cc642c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f1dc8e;
+    padding: 3rlh;
+    width: clamp(40%, 70%, 100%);
+}
+
+.main-img-2, .main-img-1 {
+    margin-top: 1rlh;
+    margin-bottom: 1rlh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-img-2{
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.main-img-2 img{
+    object-position: 0px 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section header {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+section p{
+    font-size: 24px;
 }
 
 .magpie-logo img{
@@ -14,14 +80,26 @@ body{
     grid-row-end: 2;
 }
 
+nav ul li{
+    padding: 0.5rlh;
+    width: 100%;
+    font-size: clamp(1.2rem, 2.5vw, 2rem); 
+}
+
+nav * a{
+    color: #cc642c;
+}
+
 .body-header {
     background-color: #fcefab;
     height: 12rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    border-left: 0.8rlh solid #a4cca4;
-    border-right: 0.8rlh solid #a4cca4;
+    border-top: 0.5rlh solid #a4cca4;
+    border-bottom: 0.5rlh solid #a4cca4;
+    padding: 0.5rlh;
+    gap: 1em;
 
 }
 
