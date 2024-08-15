@@ -35,6 +35,7 @@ main section {
     background-color: #f1dc8e;
     padding: 3rlh;
     width: clamp(40%, 70%, 100%);
+    gap: 16px;
 }
 
 .main-img-2, .main-img-1 {
@@ -45,6 +46,7 @@ main section {
     flex-direction: column;
 }
 
+
 .main-img-2{
     max-height: 700px;
     overflow: hidden;
@@ -52,6 +54,14 @@ main section {
 
 .main-img-2 img{
     object-position: 0px 0px;
+}
+
+.main-img-1 {
+   display: flex;
+}
+
+.main-img-1 img {
+    filter: brightness(0.8);
 }
 
 nav {
@@ -67,6 +77,54 @@ section header {
 
 section p{
     font-size: 24px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr, 1fr;
+    padding: 2vw;
+    background-color: #194027;
+    align-items: center;
+}
+
+footer * header{
+    text-align: center;
+}
+
+footer * li, footer  * a, footer * header{
+    color: #6fb69d;
+}
+
+footer * li, footer  * a{
+    font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+.footer-address-sect {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-hours-sect{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.socials-address{
+    display: flex;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    flex-direction: column;
 }
 
 .magpie-logo img{
@@ -118,4 +176,41 @@ nav * a{
     grid-column-start: 3;
     grid-column-end: 4;
 }
+.button-21 {
+    width: clamp(20%, 50%, 100%);
+    align-items: center;
+    appearance: none;
+    background-color: #6fb69d;
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 2rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 1rem;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
 
+.button-21:active,
+.button-21:focus {
+    outline: none;
+}
+
+.button-21:hover {
+    background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
