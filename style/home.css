@@ -9,9 +9,11 @@ html,body
 
 p {
     text-align: center;
+    font-size: clamp();
 }
 
 main section header {
+    text-align: center;
     font-size: 28px;
     font-weight: bold;
 }
